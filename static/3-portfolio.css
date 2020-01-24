@@ -1,49 +1,85 @@
+/*Inspired by yaronschoen.com*/
+
 body{
     font-family: 'Libre Baskerville', serif;
     color: black;
-    padding: 22px;
-}
-
-h1{
-    color: black;
-    alignment: center;
-}
-
-a:hover{
-    color: #587156;
-}
-a {
-    alignment: center;
-    color: #718C6A;
-    text-decoration: none;
+    #overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 section{
     height: 100vh;
-    width: 80%;
-    alignment: right;
+    width: 100%;
+}
+.header{
+    top: 80px;
+    left: 60px;
+}
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 4fr;
+    grid-template-rows: auto;
+    grid-gap: 8px;
+    padding: 20px;
+
+    grid-template-areas:
+            "nav ."
+            ". block"
 }
 
+.block {
+    grid-area: block;
+    max-width: 75%;
+}
+table{
+    text-align: left;
+    border-spacing: 10px;
+}
 nav{
-    width: 20%;
-    alignment: left;
-    position: fixed;
-    top: 0;
-    width:100%;
-    overflow: hidden;
+    height: 100px;
+    width: 100px;
     background-color:#718C6A;
+    grid-area: nav;
+    position: fixed;
 }
 
 nav a{
     color: white;
 }
 
-.card{
-    padding: 10px;
-    height: 90vh;
+
+.button{
+    position: relative;
+    bottom: 30px;
+    left: 50%;
 }
 
-.card-body{
-    padding: 10px;
+footer{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #718C6A;
+}
+
+footer a{
+    color: white;
+}
+h1{
+    color: black;
+    alignment: center;
+}
+
+a:hover{
+    color: #9c6586;
+}
+
+a {
+    alignment: center;
+    color: #b561b7;
+    text-decoration: none;
 }
 
 /* Source: https://codepen.io/amritleone/pen/qERPmW */
