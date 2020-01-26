@@ -1,19 +1,23 @@
 /*Inspired by yaronschoen.com*/
 
 body{
-    font-family: 'Libre Baskerville', serif;
-    color: black;
-    #overflow: hidden;
     width: 100%;
     height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.page{
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.page-details{
+    max-width: 900px;
+    margin: 0 auto;
 }
 section{
     height: 100vh;
     width: 100%;
-}
-.header{
-    top: 80px;
-    left: 60px;
+    color: black;
 }
 .container {
     display: grid;
@@ -21,33 +25,39 @@ section{
     grid-template-columns: 150px 4fr;
     grid-template-rows: auto;
     grid-gap: 8px;
-    padding: 20px;
 
     grid-template-areas:
-            "nav ."
-            ". block"
-}
+            "nav block"
+            "mthood block";
 
+}
 .block {
     grid-area: block;
-    max-width: 75%;
+    max-width: 85%;
+    justify-self: start;
 }
-table{
-    text-align: left;
-    border-spacing: 10px;
-}
+
 nav{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     background-color:#718C6A;
     grid-area: nav;
     position: fixed;
+    justify-self: end;
 }
-
 nav a{
     color: white;
 }
 
+table{
+    text-align: left;
+    border-spacing: 10px;
+}
+td{
+    padding: 8px;
+}
+tr:nth-child(even) {background-color: rgba(88, 113, 88,.3);}
+tr:nth-child(odd) {background-color: whitesmoke;}
 
 .button{
     position: relative;
@@ -68,19 +78,50 @@ footer a{
     color: white;
 }
 h1{
-    color: black;
-    alignment: center;
+    font-size: 8vh;
+    font-family: 'Gelasio', 'Josefin Slab', 'BioRhyme', serif;
+}
+h2{
+    font-family: 'Gelasio', 'Josefin Slab', 'BioRhyme', serif;
+    line-height: 35pt;
+    margin: 0 auto;
+    font-size: 3vh;
+}
+h3{
+    font-size: 5vh;
+    font-family: 'Gelasio', 'Josefin Slab', 'BioRhyme', serif;
+    line-height: 35pt;
+}
+h2 a{
+    font-size: inherit;
 }
 
 a:hover{
     color: #9c6586;
 }
-
 a {
     alignment: center;
     color: #b561b7;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20pt;
 }
+.home, .portland, .talents, .connect a{
+    font-family: 'Gelasio', 'Josefin Slab', 'BioRhyme', serif;
+}
+input[type=submit], input[type=reset]{
+    all: unset;
+    padding: 12px;
+    color: white;
+    background-color: #b561b7;
+    border-radius: 3px;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #9c6586;
+}
+
 
 /* Source: https://codepen.io/amritleone/pen/qERPmW */
 .slidingVertical span{
