@@ -5,28 +5,27 @@
     <title>Alyssa Tamayo Portfolio</title>
 
     <link rel="stylesheet" href="static/3-portfolio.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme:300|Josefin+Slab&display=swap" rel="stylesheet">
 </head>
-<header>
-    <nav>
-        <a href="thoughts.html">thoughts</a>,
-        <a href="taste.html">taste </a>&
-        <a href="talents.html">talents.</a><br>
-    </nav>
-</header>
 <body>
-
+<div class="page">
+<nav>
+    <a href="thoughts.html">thoughts</a>,<br>
+    <a href="taste.html">taste </a>&<br>
+    <a href="talents.html">talents.</a><br>
+</nav>
 <section class="home" id="home">
     <div class="container">
         <div class="block">
             <img src="static/profile_coffee_pic.jpg" width="150" alt="image of kitten">
             <h2>
-                Hello! My name is Alyssa Tamayo and I am a Software Engineer Intern at Intel Corp<br>
-                and a graduate student at Portland State University!<br>
+                Hello! My name is Alyssa Tamayo.<br>
+                I am a Software Engineer Intern at Intel Corp<br>
+                & a graduate student at Portland State University!<br><br>
                 Feel free to <a href="thoughts.html">read my thoughts</a> on my favorite CS related topics which includes, cloud
                 infrastructure and diversity & inclusion in the workplace.
             </h2>
-            <a href="#portland">You're from Portland, OR?</a><br>
+            <br><a href="#portland">You're from Portland, OR?</a>
         </div>
     </div>
 </section>
@@ -34,12 +33,13 @@
 <section class="portland" id="portland">
     <div class="container">
         <div class="block">
+            <img src="static/mthood.jpg" width="150" class="mthood">
             <h2>
                 Yes I am!<br>
                 I'm happy to have called Oregon my home for 11 years and Portland home for the past 6 years!
                 There are many reasons why I love living in Portland, OR. <br>From food to the outdoors
                 <a href="taste.html"> here are some of my recommendations</a>.
-            </h2>
+            </h2><br>
             <a href="#talents">Cool site, what else can you do?</a><br>
         </div>
     </div>
@@ -48,11 +48,12 @@
 <section class="talents" id="talents">
     <div class="container">
         <div class="block">
+            <img src="static/dogs.jpg" width="150" class="dogs">
             <h2>
                 Funny you should ask!<br>
-                Here's a list of my <a href="talents.html">accomplishments, awards and work history!</a>
-                <br> But to be honest, I'm quite the couch potato when I get home ;)
-            </h2>
+                Here's a list of my <a href="talents.html">accomplishments, awards & work history!</a>
+                But to be honest, I'm quite the couch potato when I get home ;)
+            </h2><br><br>
             <a href="#connect">I like you, let's connect!</a><br>
         </div>
     </div>
@@ -62,15 +63,42 @@
         <div class="block">
             <h2>
                 Aw Shucks! I like you, too!<br>
-                I'd love to keep in touch. You can find me on the socials.
-            </h2>
-            Let's connect! &nbsp;
+                You can find me on the socials or drop a line below!<br>
+                Let's connect! &nbsp;
+            </h2><br>
             <a href="#">LinkedIn</a> &nbsp;
             <a href="#">Instagram</a> &nbsp;
             <a href="#">Facebook</a> &nbsp;
             <a href="#">GitHub</a> &nbsp;
+            <br><br>
+        <form>
+            <fieldset>
+                <p>
+                    <label for="name">
+                        Name <input type="text" id="name" size="36"> <br>
+                    </label>
+                    <br>
+                    <label for="email">
+                        Email <input type="text" id="email" size="36"> <br>
+                    </label>
+                </p>
+                <p>
+                    <label for="comments">Message
+                        <textarea rows="6" cols="40" id="comments"></textarea><br>
+                    </label>
+                </p>
+                <label for="submit">
+                    <input type="submit" id="submit" value="Submit">
+                </label>
+                <label for="reset">
+                    <input type="reset" id="reset" value="Reset">
+                </label>
+            </fieldset>
+        </form>
         </div>
     </div>
 </section>
+</div>
 </body>
+
 </html>
