@@ -4,65 +4,120 @@
     <meta charset="UTF-8">
     <title>Alyssa Tamayo Portfolio</title>
 
-    <link rel="stylesheet" href="static/3-portfolio.css">
-    <link href="https://fonts.googleapis.com/css?family=BioRhyme:300|Josefin+Slab&display=swap" rel="stylesheet">
-</head>
-<div class="page-details">
-    <nav>
-        <a href="thoughts.html">thoughts</a>,<br>
-        <a href="taste.html">taste </a>&<br>
-        <a href="talents.html">talents.</a><br>
-    </nav>
+    <link rel="stylesheet" href="static/content-details.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <section id="taste">
-        <div class="container">
-            <div class="block">
-                <div class="header">
-                    <h1>Taste</h1>
-                    <p>I moved to Oregon in 2009 to pursue an undergraduate degree in music at the University of Oregon.<br>
-                        Upon graduating, I had moved to Portland and had called this place home ever since!<br>
-                        There are many things I love about Portland! Here's a selection of my ultimate favorite places.<br></p>
+</head>
+<body>
+<nav class="navbar">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="thoughts.html">thoughts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="taste.html">taste</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="talents.html">talents</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="header">
+        <div class="row">
+            <div class="column">
+                <h1>Taste</h1>
+                <h4>
+                    There are many things I love about Portland! Here's a selection of my ultimate favorite places.
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1531&q=80"
+                     alt="image of mt hood from unsplash" width="200" height="200">
+                <div class="card-body">
+                    <h3 class="card-title">Food</h3><br>
+                    <p class="card-text">
+                        <h5 class="card-subtitle">AM</h5><br>
+                        <ul>
+                            <li>
+                                <a class="card-link" href="#">Nosa Familia Coffee</a><a href="#">Portland Roasting Coffee</a>
+                            </li>
+                            <li>
+                                <a class="card-link" href="#">Prince Coffee @ Schoolhouse Electric</a>
+                            </li>
+                            <li>
+                                <a class="card-link" href="#">Gravy</a>
+                            </li>
+                            <li>
+                                <a class="card-link" href="#">Tin Shed</a>
+                            </li>
+                            <li>
+                                <a class="card-link" href="#">Proud Mary Cafe</a>
+                            </li>
+                        </ul>
+                        <h5 class="card-subtitle">PM</h5><br>
+                        <ul>
+                            <li><a href="http://www.marukinramen.com/se-ankeny/">Marukin Ramen</a></li>
+                            <li><a href="#">Bamboo Sushi</a></li>
+                            <li><a href="#">Apizza Scholls</a></li>
+                            <li><a href="#">Hat Yai</a></li>
+                            <li><a href="#">Langbaan</a></li>
+                            <li><a href="#">Magna</a></li>
+                            <li><a href="#">Swift & Union</a></li>
+                            <li><a href="#">Solera Brewing ... (okay, technically not Portland)</a></li>
+                        </ul>
+                    </p>
                 </div>
-                <h3>Food</h3>
-                <h5>AM</h5>
-                <ul>
-                    <li><a href="#">Nosa Familia Coffee</a></li>
-                    <li><a href="#">Portland Roasting Coffee</a></li>
-                    <li><a href="#">Prince Coffee @ Schoolhouse Electric</a></li>
-                    <li><a href="#">Gravy</a></li>
-                    <li><a href="#">Tin Shed</a></li>
-                    <li><a href="#">Proud Mary Cafe</a></li>
-                </ul>
-                <h5>PM</h5>
-                <ul>
-                    <li><a href="http://www.marukinramen.com/se-ankeny/">Marukin Ramen</a></li>
-                    <li><a href="#">Bamboo Sushi</a></li>
-                    <li><a href="#">Apizza Scholls</a></li>
-                    <li><a href="#">Hat Yai</a></li>
-                    <li><a href="#">Langbaan</a></li>
-                    <li><a href="#">Magna</a></li>
-                    <li><a href="#">Swift & Union</a></li>
-                    <li><a href="#">Solera Brewing ... (okay, technically not Portland)</a></li>
-                </ul>
-                <h3>Parks & Hikes</h3>
-                <img src="https://images.unsplash.com/photo-1505887837284-44dc0a2c058b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1294&q=80"
-                     alt="image of mt hood from unsplash" width="200">
-                <ul>
-                    <li><a href="https://www.yelp.com/biz/1000-acre-dog-park-troutdale/">Thousand Acres Dog Park</a></li>
-                    <li><a href="#">Forest Park</a></li>
-                    <li><a href="#">Ramona Falls</a></li>
-                    <li><a href="#">Cooper Spur + Cloud Cap Hike</a></li>
-                </ul>
-                <h3>Shopping</h3>
-                <ul>
-                    <li><a href="http://sloanpdx.com/">Sloan</a></li>
-                    <li><a href="#">Mantel</a></li>
-                    <li><a href="#">Betsy & Iya</a></li>
-                    <li><a href="#">Wolf Ceramics</a></li>
-                    <li><a href="#">School House Electric</a></li>
-                    <li><a href="#">Eco Vibe</a></li>
-                    <li><a href="#">Crafty Wonderland</a></li>
-                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1505887837284-44dc0a2c058b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1294&q=80"
+                     alt="image of mt hood from unsplash" width="200" height="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Parks & Hikes</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li><a class="card-link" href="https://www.yelp.com/biz/1000-acre-dog-park-troutdale/">Thousand Acres Dog Park</a></li>
+                                <li><a class="card-link" href="#">Forest Park</a></li>
+                                <li><a class="card-link" href="#">Ramona Falls</a></li>
+                                <li><a class="card-link" href="#">Cooper Spur + Cloud Cap Hike</a></li>
+                            </ul>
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1573612664822-d7d347da7b80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                     alt="boutique" width="200" height="200">
+                <div class="card-body">
+                    <h3 class="card-title">Shopping</h3>
+                    <p class="card-text">
+                    <ul>
+                        <li><a href="http://sloanpdx.com/">Sloan</a></li>
+                        <li><a href="#">Mantel</a></li>
+                        <li><a href="#">Betsy & Iya</a></li>
+                        <li><a href="#">Wolf Ceramics</a></li>
+                        <li><a href="#">School House Electric</a></li>
+                        <li><a href="#">Eco Vibe</a></li>
+                        <li><a href="#">Crafty Wonderland</a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <img class="card-img-top" src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                     alt="music" width="200" height="200">
                 <h3>Music</h3>
                 Additionally, music is a big part of who I am. <br>
                 I'm so forunate to have been able to catch some of my favorite musicians in Portland!
@@ -82,7 +137,10 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

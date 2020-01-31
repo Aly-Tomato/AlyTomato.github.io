@@ -11,6 +11,7 @@
 |01/26/2020 |   4 hours  | Copy journal into README. Play around with mobile layouts. Add contact form. Try various styling options
 |01/29/2020 |   2 hours  | Explore CSS transition/transform options to animate hovers 
 |01/20/2020 |   4 hours  | Restart layout design referencing CSS grid examples done in class 
+|01/30/2020 |   3 hours  | Implement bootstrap cards for taste section 
 
 ### Challenges and Triumphs
 * Layouts  
