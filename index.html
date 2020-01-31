@@ -4,101 +4,147 @@
     <meta charset="UTF-8">
     <title>Alyssa Tamayo Portfolio</title>
 
-    <link rel="stylesheet" href="static/3-portfolio.css">
-    <link href="https://fonts.googleapis.com/css?family=BioRhyme:300|Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/playtime_portfolio.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<div class="page">
-<nav>
-    <a href="thoughts.html">thoughts</a>,<br>
-    <a href="taste.html">taste </a>&<br>
-    <a href="talents.html">talents.</a><br>
+<nav class="navbar">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="thoughts.html">thoughts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="taste.html">taste</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="talents.html">talents</a>
+        </li>
+    </ul>
 </nav>
-<section class="home" id="home">
-    <div class="container">
-        <div class="block">
-            <img src="static/profile_coffee_pic.jpg" width="150" alt="image of kitten">
-            <h2>
-                Hello! My name is Alyssa Tamayo.<br>
+
+<section class="container" id="home">
+    <div class="content">
+        <div class="row header">
+            <div class="column">
+                <img src="static/profile_coffee_pic.jpg" width="150" alt="coffee profile pic">
+            </div>
+        </div>
+        <div class="row">
+        <span class="myhr">
+                <h3>
+                    Hi, My name is Alyssa Tamayo.
+                </h3>
+            </span>
+        </div>
+        <div class="row">
+            <h3 class="converse">
                 I am a Software Engineer Intern at Intel Corp<br>
                 & a graduate student at Portland State University!<br><br>
-                Feel free to <a href="thoughts.html">read my thoughts</a> on my favorite CS related topics which includes, cloud
-                infrastructure and diversity & inclusion in the workplace.
-            </h2>
-            <br><a href="#portland">You're from Portland, OR?</a>
+            </h3>
+        </div>
+        <div class="row">
+            <h3>
+                Feel free to <a class="animate" href="thoughts.html">read my thoughts</a> on my favorite CS related topics.
+            </h3>
+        </div>
+        <div class="row">
+            <a class="animate" href="#portland">You're from Portland, OR?</a>
         </div>
     </div>
 </section>
 
-<section class="portland" id="portland">
-    <div class="container">
-        <div class="block">
+<section class="container" id="portland">
+    <div class="content">
+        <div class="row header">
             <img src="static/mthood.jpg" width="150" class="mthood">
-            <h2>
-                Yes I am!<br>
-                I'm happy to have called Oregon my home for 11 years and Portland home for the past 6 years!
-                There are many reasons why I love living in Portland, OR. <br>From food to the outdoors
-                <a href="taste.html"> here are some of my recommendations</a>.
-            </h2><br>
-            <a href="#talents">Cool site, what else can you do?</a><br>
+        </div>
+        <div class="row">
+            <span class="myhr">
+                <h3>Yes I am!</h3>
+            </span>
+        </div>
+        <div class="row">
+            <h3>
+            I'm happy to have called Oregon home <br>
+            for 11 years and Portland home for the past 6 years!<br>
+            There are many reasons why I love living in Portland, OR. <br>From food to the outdoors
+            <a class="animate" href="taste.html"> here are some of my recommendations</a>.
+            </h3>
+        </div>
+        <div class="row">
+            <a class="animate" href="#talents">Cool site, what else can you do?</a><br>
         </div>
     </div>
 </section>
 
-<section class="talents" id="talents">
-    <div class="container">
-        <div class="block">
-            <img src="static/dogs.jpg" width="150" class="dogs">
-            <h2>
-                Funny you should ask!<br>
+<section class="container" id="talents">
+    <div class="content">
+        <div class="row header">
+            <img src="static/dogs.jpg" class="animated slideInRight" width="150">
+        </div>
+        <div class="row">
+            <div class="myhr">
+                <h3>Funny you should ask!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <h3>
                 Here's a list of my <a href="talents.html">accomplishments, awards & work history!</a>
-                But to be honest, I'm quite the couch potato when I get home ;)
-            </h2><br><br>
-            <a href="#connect">I like you, let's connect!</a><br>
+                <br>But to be honest, I'm quite the couch potato when I get home ;)
+            </h3>
+        </div>
+        <div class="row">
+            <a class="animate" href="#connect">I like you, let's connect!</a><br>
         </div>
     </div>
 </section>
-<section class="connect" id="connect">
-    <div class="container">
-        <div class="block">
-            <h2>
-                Aw Shucks! I like you, too!<br>
-                You can find me on the socials or drop a line below!<br>
-                Let's connect! &nbsp;
-            </h2><br>
-            <a href="#">LinkedIn</a> &nbsp;
-            <a href="#">Instagram</a> &nbsp;
-            <a href="#">Facebook</a> &nbsp;
-            <a href="#">GitHub</a> &nbsp;
-            <br><br>
-        <form>
-            <fieldset>
-                <p>
-                    <label for="name">
-                        Name <input type="text" id="name" size="36"> <br>
-                    </label>
-                    <br>
-                    <label for="email">
-                        Email <input type="text" id="email" size="36"> <br>
-                    </label>
-                </p>
-                <p>
-                    <label for="comments">Message
-                        <textarea rows="6" cols="40" id="comments"></textarea><br>
-                    </label>
-                </p>
-                <label for="submit">
-                    <input type="submit" id="submit" value="Submit">
-                </label>
-                <label for="reset">
-                    <input type="reset" id="reset" value="Reset">
-                </label>
-            </fieldset>
-        </form>
-        </div>
-    </div>
+
+<section class="container" id="connect">
+   <div class="content">
+       <h3>
+           Aw Shucks! I like you, too!<br>
+           You can find me on the socials or drop a line below!<br>
+           Let's connect! &nbsp;
+       </h3><br>
+       <a href="#">LinkedIn</a> &nbsp;
+       <a href="#">Instagram</a> &nbsp;
+       <a href="#">Facebook</a> &nbsp;
+       <a href="#">GitHub</a> &nbsp;
+       <br><br>
+       <form>
+           <fieldset>
+               <p>
+                   <label for="name">
+                       Name <input type="text" id="name" size="36"> <br>
+                   </label>
+                   <br>
+                   <label for="email">
+                       Email <input type="text" id="email" size="36"> <br>
+                   </label>
+               </p>
+               <p>
+                   <label for="comments">Message
+                       <textarea rows="6" cols="40" id="comments"></textarea><br>
+                   </label>
+               </p>
+               <label for="submit">
+                   <input type="submit" id="submit" value="Submit">
+               </label>
+               <label for="reset">
+                   <input type="reset" id="reset" value="Reset">
+               </label>
+           </fieldset>
+       </form>
+   </div>
 </section>
-</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

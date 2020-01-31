@@ -4,6 +4,7 @@ body{
     width: 100%;
     height: 100%;
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #c598af;
 }
 .page{
     max-width: 900px;
@@ -29,7 +30,7 @@ section{
 
     grid-template-areas:
             "nav block"
-            "mthood block";
+            "nav block";
 
 }
 .block {
@@ -39,12 +40,12 @@ section{
 }
 
 nav{
-    height: 150px;
+    grid-column: 1 / 2;
+    height: 100%;
     width: 150px;
-    background-color:#718C6A;
+    /*background-color:#718C6A;*/
     grid-area: nav;
-    position: fixed;
-    justify-self: end;
+    transform: rotate(-90deg);
 }
 nav a{
     color: white;
@@ -93,20 +94,28 @@ h3{
     font-family: 'Gelasio', 'Josefin Slab', 'BioRhyme', serif;
     line-height: 35pt;
 }
+
+.animate{
+    transition: all .2s ease-in-out;
+}
+.animate:hover{
+    transform: scale(1.1);
+}
 h2 a{
     font-size: inherit;
+    transition: all .2s ease-in-out;
 }
 
-a:hover{
-    color: #9c6586;
-}
 a {
-    alignment: center;
-    color: #b561b7;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
     line-height: 20pt;
+    transition: all .2s ease-in-out;
+}
+a:hover{
+    transform: scale(1.1);
 }
 .home, .portland, .talents, .connect a{
     font-family: 'Gelasio', 'Josefin Slab', 'BioRhyme', serif;
