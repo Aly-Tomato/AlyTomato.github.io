@@ -19,7 +19,6 @@ nav{
     float: left;
     #background-color: #eeeeee;
 }
-
 .container{
     float: right;
     padding: 20px;
@@ -46,12 +45,12 @@ nav{
 .row *{
     display: inline-block;
     margin: 10px;
-
 }
 .card{
     width: 20rem;
     background-color: #eeeeee;
     padding: 10px;
+    display: inline-block;
 }
 
 .animate{
