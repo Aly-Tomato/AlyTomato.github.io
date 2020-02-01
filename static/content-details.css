@@ -67,12 +67,16 @@ ul{
     justify-content: space-between;
 }
 
+.nav-link.welcome{
+    font-size: 10pt;
+}
 .nav-link{
     font-size: 4em;
     font-weight: bold;
     color: #cb93b5;
     transition: all .2s ease-in-out;
 }
+
 .nav-link:hover{
     transform: scale(1.1);
     color: black;
