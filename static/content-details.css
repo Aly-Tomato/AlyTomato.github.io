@@ -1,0 +1,95 @@
+/*Inspired by yaronschoen.com*/
+
+body{
+    font-size: 14pt;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    background-color: rgba(203, 147, 181, .4) !important;
+}
+nav{
+    position: fixed !important;
+    z-index: 1000;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 150px);
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-100%);
+    width: 100vh;
+    float: left;
+    #background-color: #eeeeee;
+}
+
+.container{
+    float: right;
+    padding: 20px;
+    row-gap: 10px;
+}
+.header{
+    width: 500px;
+    height: 150px;
+}
+.myhr{
+    background-color: rgba(203, 147, 181, .4);
+    display: block;
+    height: 25px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.content{
+    margin: 0 auto;
+    color: #4e4e4e;
+    max-width: 80%;
+    align-items: center;
+}
+
+.row *{
+    display: inline-block;
+    margin: 10px;
+
+}
+.card{
+    width: 20rem;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.animate{
+    transition: all .2s ease-in-out;
+    font-style: italic;
+    text-decoration: none !important;
+}
+.animate:hover{
+    transform: scale(1.1);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link{
+    font-size: 4em;
+    font-weight: bold;
+    color: #cb93b5;
+    transition: all .2s ease-in-out;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+    color: black;
+}
+/*
+.container.nav{
+    display: flex;
+    color:white;
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+*/
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+
